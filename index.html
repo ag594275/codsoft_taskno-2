@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <header>
+            <h1>P<span>ORTFOLIO</span></h1>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="hero-section" id="hero">
+            <div class="main-section">
+                <h1>I am <span class="main-head">A</span>bhishek</h1>
+                <h2>I am a <span class="role"></span></h2>
+                <p>Its my portfolio website. Here you'll learn about my journey.</p>
+            </div>
+            <div class="btn-section">
+                    <div class="btn" id="hireme" onclick="resume()">Resume</div>
+                    <div class="btn" id="hireme" onclick="sendMail()">Hire Me</div>
+            </div>
+        </div>
+
+        <div class="about-section" id="about">
+            <div class="about-content">
+                <div class="about-left">
+                        <img src="profile.jpeg" alt="">
+                </div>
+                <div class="about-right">
+                    <h1 class="about-heading"><span class="section-head">A</span>bout</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam ullam ratione blanditiis consequuntur alias, doloribus voluptate mollitia, corrupti earum sit expedita fuga saepe. Velit quisquam, necessitatibus placeat sunt minus, et quo nisi aperiam minima nostrum, aliquid fugit officiis. Est rerum voluptate accusamus vitae placeat ipsa? Quam reprehenderit inventore nulla!</p>
+                    <div class="links">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="link-content active-tab" id="skills">
+                        <ul>
+                            <li>Java</li>
+                            <li>MySql</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="link-content" id="experience">
+                        <ul>
+                            <li><span>03/2024 - 04/2024</span><br>Web Developer Intern at Oasis Infobyte</li>
+                            <li><span>02/2024 - 03/2024</span><br>Web Developer Intern at Codsoft</li>
+                            <li><span>09/2023 - 10/2023</span><br>Internship at Ybi Foundation</li>
+                        </ul>
+                    </div>
+                    <div class="link-content" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>B.Tech(CSE-AIML)</li>
+                            <li><span>2020</span><br>Intermediate</li>
+                            <li><span>2018</span><br>Matriculation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section" id="project">
+            <h1 class="project-heading" id="item1"><span class="section-head">M</span>y Projects</h1>
+            <div class="card" id="item2">
+                <img src="work-1.png" alt="">
+                <div class="desc">
+                    <h3>Pancard Tampering Detection</h3>
+                    <p class="project-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="card" id="item3">
+                <img src="work-2.png" alt="">
+                <div class="desc">
+                    <h3>Car Detection And Count</h3>
+                    <p class="project-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="card" id="item4">
+                <img src="work-3.png" alt="">
+                <div class="desc">
+                    <h3>Price Prediction System</h3>
+                    <p class="project-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <div class="contact-left">
+                <h1 class="contact-heading">Drop a Message</h1>
+                <input type="text" placeholder="Your Name" id="name">
+                <input type="text" placeholder="Email" id="email">
+                <input type="text" placeholder="Subject" id="subject">
+                <textarea name="message" id="message" cols="30" rows="3" placeholder="Message"></textarea>
+                <div class="btn" id="hireme" onclick="">Send Message</div>
+            </div>
+            <div class="contact-right">
+                <h1 class="contact-heading">Contact Me</h1>
+                <p>Rkgit, Rajnagar Extension Ghaziabad</p>
+                <p>+91-9264990162</p>
+                <p>ag594275@gmail.com</p>
+                <div class="btn" id="hireme" onclick="resume()">Resume</div>
+                <div class="logo">
+                    <a href="https://www.linkedin.com/in/abhishek-gupta1231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ag594275" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/abhishek.m.15/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <footer id="owner">
+            <p>Copyright @2024 All rights reserved | &nbsp<a href="#">Abhishek Gupta</a></p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="app.js"></script>
+</body>
+</html>
